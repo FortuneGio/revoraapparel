@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase - Revora Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="brand-name">Revora</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="showcase">
+    <h2>Showcase</h2>
+    <div class="clothing-grid">
+      <!-- Add your clothing designs here with data-image attributes -->
+      <div class="clothing-item" data-image="hoodie1.jpg">Front 1</div>
+      <div class="clothing-item" data-image="shirt1.jpg">Back 1</div>
+      <div class="clothing-item" data-image="hoodie2.jpg">Front 2</div>
+      <div class="clothing-item" data-image="shirt2.jpg">Black 2</div>
+    </div>
+  </section>
+
+  <!-- Add this section to display images -->
+  <section id="image-display" style="text-align: center; margin-top: 20px;">
+    <img id="displayed-image" src="" alt="Selected Clothing" style="max-width: 100%; display: none;">
+  </section>
+
+  <footer>
+    <p>© 2024 Revora Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
