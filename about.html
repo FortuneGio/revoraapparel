@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - Revora Clothing</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- AOS Library CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
   <header>
@@ -24,28 +26,25 @@
   </section>
 
   <!-- New Team Section -->
-  <section id="team">
-    <h2>Meet the Team</h2>
-    <div class="team-container">
-      <!-- Founders Section -->
-      <div class="team-member founder">
-        <img src="Gio.jpg" alt="Founder 1" class="team-photo">
-        <h3>Giorgio Wong</h3>
-        <p>CEO & Co-Founder</p>
-      </div>
-      <div class="team-member founder">
-        <img src="david.jpg" alt="Founder 2" class="team-photo">
-        <h3>David Green</h3>
-        <p>COO & Co-Founder</p>
-      </div>
-
-      <!-- Assistant Section -->
-      <div class="team-member assistant">
-        <img src="Rayen.jpg" alt="Assistant" class="team-photo">
-        <h3>Rayen</h3>
-        <p>Creative Assistant</p>
-      </div>
+  <section id="team" data-aos="fade-up">
+  <h2>Meet the Team</h2>
+  <div class="team-container">
+    <div class="team-member" data-aos="fade-up">
+      <img src="Gio.jpg" alt="Founder 1" class="founder">
+      <h3>Giorgio Wong</h3>
+      <p>CEO & Co-Founder</p>
     </div>
+    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+      <img src="David.jpg" alt="Founder 2" class="founder">
+      <h3>David Green</h3>
+      <p>COO & Co-Founder</p>
+    </div>
+    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+      <img src="Rayen.jpg" alt="Assistant" class="assistant">
+      <h3>Rayen</h3>
+      <p>Assistant</p>
+    </div>
+  </div>
   </section>
 
   <!-- New Investors Section -->
@@ -62,5 +61,10 @@
   <footer>
     <p>© 2024 Revora Clothing. All rights reserved.</p>
   </footer>
+  <!-- AOS Library JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
