@@ -132,4 +132,76 @@ body {
     height: auto;
   }
 
+  /* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* About Section */
+#about {
+  padding: 20px;
+  text-align: center;
+}
+
+#about p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+#team {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#team h2 {
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-photo {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.founder .team-photo {
+  width: 200px;
+  height: 200px;
+}
+
+/* Investors Section */
+#investors {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#investors h2 {
+  margin-bottom: 20px;
+}
+
+#investors ul {
+  list-style: none;
+  padding: 0;
+}
+
+#investors ul li {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
   
