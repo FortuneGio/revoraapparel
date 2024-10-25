@@ -53,6 +53,97 @@ nav ul li a {
     animation: fadeIn 3s ease-in-out;
 }
 
+#showcase {
+    padding: 50px;
+    background-color: white;
+}
+
+.clothing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.clothing-item {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.clothing-item:hover {
+    background-color: #ff6600;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#about, #contact {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Team Section */
+#team {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#team h2 {
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.founder .team-photo {
+    width: 200px;
+    height: 200px;
+}
+
+/* Investors Section */
+#investors {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#investors h2 {
+    margin-bottom: 20px;
+}
+
+#investors ul {
+    list-style: none;
+    padding: 0;
+}
+
+#investors ul li {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+#displayed-image {
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Animations */
 .cta-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -75,36 +166,28 @@ nav ul li a {
     transition: background-color 0.3s;
 }
 
+/* Image display responsiveness */
 #displayed-image {
-    max-width: 500px;
-    margin: 20px auto;
-    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .clothing-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
     }
 }
 
 @media (max-width: 480px) {
     .clothing-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 column for mobile phones */
         padding: 10px;
     }
 
     .clothing-item {
         padding: 15px;
     }
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
 }
 
 /* Keyframes for Animations */
@@ -129,4 +212,12 @@ footer {
     60% {
         transform: translateY(-7px);
     }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
