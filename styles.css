@@ -105,6 +105,30 @@ body {
   margin: 20px auto;
   display: block;
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Add this to the styles.css file */
 
 /* When the screen is smaller than 768px (typical tablet) */
 @media (max-width: 768px) {
@@ -204,4 +228,4 @@ body {
   font-size: 18px;
 }
 
-/* Add this to the styles.css file */
+/* Keyframes for Animations */
