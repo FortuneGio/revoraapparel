@@ -246,3 +246,58 @@ footer {
     padding: 15px;
   }
 }
+
+#proposal {
+  padding: 20px;
+  background-color: #fff; /* Light background for readability */
+  border: 1px solid #ccc; /* Subtle border */
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+#proposal h2, #proposal h3, #proposal h4 {
+  color: #333;
+  padding: 10px 0;
+}
+
+#proposal ul {
+  padding-left: 20px;
+}
+
+#proposal li {
+  padding: 5px 0;
+  color: #666; /* Darker text for better readability */
+}
+/* Button Styling for Showcase Items */
+button {
+  background-color: #ff6600; /* Revora's theme orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #cc5200; /* Darker shade of orange */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Ensure buttons are flexibly displayed in the grid */
+.clothing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  button {
+    padding: 8px 16px; /* Slightly smaller padding on smaller screens */
+    font-size: 14px; /* Smaller font size for better fit */
+  }
+}
